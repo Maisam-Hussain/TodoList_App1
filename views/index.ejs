@@ -1,0 +1,33 @@
+<%- include('header') -%>
+  <div class="box" id="heading">
+    <!-- <h1>Todo List</h1> -->
+    <h1>
+      <span class="todoIcon">Todo List</span>
+      <span class="today">(<%= todayTask %>)</span>
+    </h1>
+  </div>
+  <div>
+    <a href="" class="menu">Tasks</a>
+    <ul class="todo-nav">
+      <li role="presentation" class="nav-item all-task active"><a href="#" class="nav-link">All</a></li>
+      <li role="presentation" class="nav-item active-task"><a href="#" class="nav-link">Active</a></li>
+      <li role="presentation" class="nav-item completed-task"><a href="#" class="nav-link">Completed</a></li>
+    </ul>
+  </div>
+  
+  <div>
+    <div class="box todo-list">
+      <% for(let i = 0; i<newListItems.length; i++) { %>
+          <div class="item todo-item">
+            <input type="checkbox">
+            <p> <%= newListItems[i] %> </p>
+          </div>
+          <% } %>
+      <form class="item" action="/" method="post">
+        <input type="text" name="newItem" placeholder="Add" autocomplete="off">
+        <button type="submit" name="button" value="<%= todayTask %>">+</button>
+      </form>
+    </div>
+  </div>
+  <link rel="stylesheet" href="/js/index.js">
+<%- include('footer') -%>
