@@ -63,8 +63,8 @@ A web browser
 
 Steps
 
-1.Open your web browser and navigate to the Todo List App1 website.
-2.Then starting adding tasks to it by writing your tasks that you'll have to do today and, then hit the enter-button to add that task to the website.
+1. Open your web browser and navigate to the Todo List App1 website.
+2. Then starting adding tasks to it by writing your tasks that you'll have to do today and, then hit the enter-button to add that task to the website.
 
 
 Congratulations! You have successfully add tasks to your todo list web app.
